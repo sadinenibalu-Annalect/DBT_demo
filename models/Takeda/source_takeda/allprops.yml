@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: adintel
+    database: res-na-prd-takeda-us
+    schema: etl_takeda_competitive
+    tables:
+      - name: etl_adintel_magazine
+
