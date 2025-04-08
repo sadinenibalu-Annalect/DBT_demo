@@ -1,0 +1,1 @@
+select * from {{ source('takeda', 'dma_impression_stage') }}

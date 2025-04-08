@@ -1,0 +1,1 @@
+select * from {{ source('takeda', 'facebook_stage') }}

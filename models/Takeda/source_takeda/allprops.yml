@@ -6,4 +6,3 @@ sources:
     schema: etl_takeda_competitive
     tables:
       - name: etl_adintel_magazine
-

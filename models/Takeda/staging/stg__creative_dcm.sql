@@ -1,0 +1,1 @@
+select creative,creative_name from {{ source('takeda', 'dcm_creative_lookup_table') }}

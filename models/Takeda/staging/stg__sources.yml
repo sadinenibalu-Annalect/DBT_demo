@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: takeda
+    database: res-na-prd-takeda-us
+    schema: takeda_merkle_stage_table
+    tables:
+      - name: facebook_stage
+      - name: dma_impression_stage
+      - name: dcm_creative_lookup_table
