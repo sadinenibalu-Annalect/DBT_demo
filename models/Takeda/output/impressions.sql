@@ -1,0 +1,1 @@
+select * from {{ ref('impression_tva_creative') }}

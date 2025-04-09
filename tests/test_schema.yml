@@ -1,0 +1,5 @@
+version: 2
+data_tests:
+  - name: impression_tva_creative_site_imp_positive
+    description: >
+      check if any og the site have 0 impressions as per the data provided
