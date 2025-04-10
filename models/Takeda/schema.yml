@@ -5,10 +5,16 @@ models:
     - name: takeda_test
       description: "A starter dbt model"
       columns:
-          - name: seq
+          - name: product_category
             description: "The primary key for this table"
             tests:
                 - unique
                 - not_null
-          - name: name
-            description: "The name of seq"
+          - name: brand
+            description: "The brand name of product_category"
+    - name: stg__creative_dcm
+      description: "key value pair data for the creative and creative name"
+      columns:
+        - name: creative
+          description: "creative based on the creative name provided value"
+      

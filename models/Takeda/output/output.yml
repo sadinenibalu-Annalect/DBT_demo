@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: impressions
+    description: "impressions from DMA and facebook"
+    columns:
+      - name: site
+        description: "name of the site where the data belongs to"
+        tests:
+          - not_null
+          - accepted_values:
+              values:
+                - "healthline.com"
+                - "Discovery Go"
+                - "Health Union.com"
+                - "Sharecare"
+                - "Video Amp"
+                - "HealthGrades"
+                - "Yahoo AdTech"
+      - name: tva_creative
+        description: "dcm creative we got via the join clause"
+        tests:
+          - relationships:
+              field: creative
+              to: ref('stg__creative_dcm')
